@@ -5,7 +5,7 @@ on:
       - main
 jobs:
   deploy-to-ec2:
-    runs-on: ubuntu-latest
+    runs-on: MacOS 
     steps:
       - name: Deploy to server
         uses: easingthemes/ssh-deploy@main
@@ -14,4 +14,4 @@ jobs:
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           SOURCE: "./"
-          TARGET: "/home/ubuntu/data_engineering_project_template"
+          TARGET: "/home/data engineering project
